@@ -27,7 +27,7 @@ IoT는 화면 하나 뒤에 기기, 통신, 서버가 전부 얽혀 있습니다
 
 <a href="https://openiot.app/blog"><img src="./assets/blog-carousel.svg" alt="OpenIoT 기술 블로그 글 13편이 차례로 넘어가는 슬라이드" width="100%"></a>
 
-<details open>
+<details>
 <summary><b>설계기</b> &nbsp;플랫폼을 만들며 고른 구조</summary>
 <br>
 
@@ -51,7 +51,7 @@ IoT는 화면 하나 뒤에 기기, 통신, 서버가 전부 얽혀 있습니다
 
 </details>
 
-<details open>
+<details>
 <summary><b>현장 구축기</b> &nbsp;고객 현장의 제약에서 시작한 프로젝트</summary>
 <br>
 
