@@ -119,15 +119,6 @@ AI로 이전과 비교할 수 없는 품질과 속도에 도전합니다.
 
 찾는 포지션이 없다면 [인재풀](https://openiot.app/careers/talent-pool)에 등록해 두세요. 새 포지션이 열리면 가장 먼저 연락드립니다.
 
-## 자체 솔루션
-
-| | |
-|---|---|
-| [**오토플레이스**](https://openiot.app/solutions/autoplace) | 무인매장 점주를 위한 공간 자동화 서비스 |
-| [**오픈플러그**](https://openiot.app/solutions/openplug) | 결제형 IoT 플러그 세팅과 관리 |
-| [**방온도**](https://openiot.app/solutions/bangondo) | 제어형 스마트 온도 관리 시스템 |
-| [**오픈노트**](https://openiot.app/solutions/opennote) | 스마트 자동 기록 시스템 |
-
 ---
 
 <div align="center">
