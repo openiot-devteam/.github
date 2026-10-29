@@ -7,45 +7,65 @@
 
 ### 사람과 사물과 인공지능을 연결해 세상의 문제를 해결합니다
 
-디바이스, 앱, 클라우드, AI 연동까지. IoT 서비스를 가장 빠르게 구축합니다.
+센서의 신호가 앱 화면에 닿기까지, 전 구간을 한 팀이 만듭니다.
 
 [![Website](https://img.shields.io/badge/openiot.app-000000?style=flat-square&logo=googlechrome&logoColor=white)](https://openiot.app)
-[![Blog](https://img.shields.io/badge/Blog-000000?style=flat-square&logo=rss&logoColor=white)](https://openiot.app/blog)
+[![Tech Blog](https://img.shields.io/badge/Tech_Blog-000000?style=flat-square&logo=rss&logoColor=white)](https://openiot.app/blog)
+[![We're hiring](https://img.shields.io/badge/We're_hiring-2EA44F?style=flat-square&logo=github&logoColor=white)](https://openiot.app/careers)
 [![Contact](https://img.shields.io/badge/dev@openiot.app-000000?style=flat-square&logo=maildotru&logoColor=white)](mailto:dev@openiot.app)
 
 </div>
 
 ---
 
-## 하는 일
+100곳이 넘는 기업의 IoT 프로젝트를 회로도부터 펌웨어, 앱, 클라우드, AI까지 한 팀 안에서 완성해 왔습니다.
+다음 목표는 비전문가도 IoT 제품을 만들고 그 위에 서비스와 AI를 붙이는 데 5분이면 되는 환경입니다.
 
-하드웨어부터 클라우드까지, 비즈니스에 맞는 IoT 시스템을 처음부터 끝까지 만듭니다.
+## 이런 문제를 풉니다
+
+IoT는 화면 하나 뒤에 기기, 통신, 서버가 전부 얽혀 있습니다. 저희가 실제로 부딪힌 문제와 고른 답을 블로그에 적고 있습니다.
+
+| 문제 | 설계기 |
+|---|---|
+| 슬라이더를 3초 움직이면 명령이 90개. 그런데 새벽 2시 예약 실행도 돌아야 한다 | [원격 제어 경로를 둘로 나눈 이야기](https://openiot.app/blog/remote-control-dual-path) |
+| 고객 손에 있는 기기를 원격으로 업데이트하다 실패하면 전량 회수 | [실패해도 기기가 살아있는 업데이트](https://openiot.app/blog/ota-firmware-ab-partition) |
+| 앱에서 "기기 추가"를 누른 몇 초 안에 옆집 사람이 내 기기를 가져갈 수 있다 | [공장에서 나온 기기가 주인을 찾기까지](https://openiot.app/blog/device-provisioning-identity-ownership) |
+| 화면의 초록 점과 실제로 명령을 받을 수 있는 상태는 다르다 | [기기 상태 판정 분투기](https://openiot.app/blog/device-liveness-online-status) |
+| 기기 1,000대가 10초마다 보내면 하루 864만 건 | [저장과 조회 설계기](https://openiot.app/blog/iot-data-pipeline-aggregation) |
+| 한 플랫폼 위 여러 고객사, 데이터가 섞이는 순간 끝 | [격리를 약속이 아니라 구조로 만들기](https://openiot.app/blog/multi-tenancy-isolation-rbac) |
+| 제품이 늘 때마다 앱을 새로 만들고 스토어 심사를 받을 수는 없다 | [하이브리드 앱 셸 설계기](https://openiot.app/blog/hybrid-app-shell-one-app) |
+| 가족 셋이 같은 조명을 켜면 세 휴대폰의 스위치가 같이 움직여야 한다 | [여러 사람이 여러 기기를 함께 쓰는 구조](https://openiot.app/blog/multi-user-device-control-pool) |
+
+현장 구축기도 있습니다. [자판기를 뜯지 않고 원격 관리하기](https://openiot.app/blog/vending-machine-retrofit-module), [통신이 끊겨도 열리는 무인주차 차단기](https://openiot.app/blog/unmanned-parking-direct-control), [사원증 한 장을 두 시스템이 읽는 휴게 관리](https://openiot.app/blog/break-time-badge-tagging), [부품 고르는 날 시작하는 보안인증](https://openiot.app/blog/kisa-iot-security-certification-lite)
+
+## 하는 일
 
 | 영역 | 내용 |
 |---|---|
-| **디바이스** | 고객 맞춤 하드웨어 설계, 회로도와 PCB, 프로토타입 제작 |
-| **펌웨어** | ESP32, STM32, Nordic 등 칩별 최적화 펌웨어, BLE / Wi-Fi 프로비저닝, OTA 원격 업데이트 |
-| **모바일 앱** | 기기 연동 전용 iOS / Android 앱, 웹뷰 기반 화면 구성 |
-| **클라우드** | 서버리스 기반 확장형 인프라, 관리자 대시보드, 실시간 데이터 수집 |
-| **인공지능** | STT, TTS, Vision, LLM 연동과 IoT 데이터 이상 탐지 |
-
-## 일하는 방식
-
-```
- 01 분석        →  02 설계          →  03 개발           →  04 운영 지원
- 목표와 요건 정리    회로, 펌웨어, 클라우드    펌웨어, 앱, 관리 시스템    양산, 배포, 모니터링,
- 현장 환경 확인     설계와 프로토타입 검증    병렬 개발, 실환경 테스트    OTA 와 장애 대응
-```
+| **하드웨어** | 센서 선정, 회로도와 PCB 설계, 프로토타입 제작 |
+| **펌웨어** | ESP32, STM32, Nordic 칩별 펌웨어, BLE / Wi-Fi 프로비저닝, 실패해도 이전 버전으로 돌아가는 OTA |
+| **통신** | BLE, Wi-Fi, LTE-M / NB-IoT, Matter, Zigbee, RFID / NFC, MQTT |
+| **앱** | 제품이 늘어도 한 벌로 유지되는 iOS / Android 앱, 관리자 대시보드 |
+| **클라우드** | 쓰지 않을 땐 비용이 0인 서버리스 인프라, 멀티테넌트 격리, 시계열 데이터 집계 |
+| **AI** | STT, TTS, 카메라 객체 인식, LLM 기반 이상 감지와 요약 |
 
 ## 기술 스택
 
-**Firmware**<br>
+**Firmware / Hardware**<br>
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
 ![Nordic](https://img.shields.io/badge/Nordic-00A9CE?style=flat-square&logo=nordicsemiconductor&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white)
+
+**Connectivity**<br>
+![Bluetooth LE](https://img.shields.io/badge/BLE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
+![Wi-Fi](https://img.shields.io/badge/Wi--Fi-4A4A4A?style=flat-square)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
+![Matter](https://img.shields.io/badge/Matter-4A4A4A?style=flat-square)
+![Zigbee](https://img.shields.io/badge/Zigbee-EB0443?style=flat-square&logo=zigbee&logoColor=white)
+![LTE-M](https://img.shields.io/badge/LTE--M_/_NB--IoT-4A4A4A?style=flat-square)
 
 **App / Web**<br>
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -59,10 +79,34 @@
 ![AWS IoT Core](https://img.shields.io/badge/IoT_Core-7AA116?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-## 솔루션
+## 일하는 방식
+
+- **"그건 펌웨어 쪽 문제"가 없습니다.** 회로도, 펌웨어, 앱, 서버를 한 팀이 만들어서 문제가 생기면 끝까지 같이 따라갑니다.
+- **기반은 엄격하게, 그 위는 빠르게.** 여러 곳에서 오래 쓰일 시스템은 다시 손대지 않아도 되는 길을 고르고, 그 위에서는 많이 만들고 빨리 확인합니다.
+- **규칙은 적어 두지 않고 막아 둡니다.** 규약을 왜 그렇게 정했는지 결정 기록으로 남기고, 지켜야 하는 것은 브랜치 보호와 자동 검사로 걸어 둡니다.
+- **바퀴를 다시 만들지 않습니다.** 디자인시스템, 푸시 알림, 본인확인처럼 여러 서비스가 쓰는 것은 공용으로 한 번 만들고 가져다 씁니다.
+- **AI는 쓰되 판단은 사람이 합니다.** 팀 전체가 AI 코딩 도구를 쓰고, 사내 규약을 도구에 심어 리뷰와 검사에 씁니다. 결과물은 스스로 검증한 뒤 내보냅니다.
+- **회로도도 코드로 뽑습니다.** 블록 목록에서 회로도, 부품 배치, 배선, 전기 검사, PCB 주문 자료까지 이어지는 파이프라인을 직접 만들어 씁니다.
+
+## 함께할 동료를 찾습니다
+
+**[풀스택 개발자 (React Native, Node.js, Terraform)](https://openiot.app/careers/fullstack-developer)** &nbsp; 정규직, 경력 3년 이하, 상시 채용
+
+화면부터 API, 인프라 배포까지 한 사이클을 직접 다룹니다. 실제로 동작하는 IoT 기기에서 올라오는 데이터를 화면에 그리고, 기기를 제어합니다.
+
+- 코어타임 11:00~16:00 시차근무, 연차는 15분 단위로도 사용
+- 최신 MacBook, 듀얼 모니터, 모션 데스크
+- ChatGPT, Claude 등 AI 툴 지원
+- 입사하면 IoT 기기가 든 웰컴 키트
+
+찾는 포지션이 없다면 [인재풀](https://openiot.app/careers/talent-pool)에 등록해 두세요. 새 포지션이 열리면 가장 먼저 연락드립니다.
+[일하는 방식](https://openiot.app/careers/culture)과 [채용 절차](https://openiot.app/careers/process)도 볼 수 있습니다.
+
+## 자체 솔루션
 
 | | |
 |---|---|
@@ -70,8 +114,6 @@
 | [**오픈플러그**](https://openiot.app/solutions/openplug) | 결제형 IoT 플러그 세팅과 관리 |
 | [**방온도**](https://openiot.app/solutions/bangondo) | 제어형 스마트 온도 관리 시스템 |
 | [**오픈노트**](https://openiot.app/solutions/opennote) | 스마트 자동 기록 시스템 |
-
-함께 만든 서비스는 [포트폴리오](https://openiot.app/portfolio), 개발 과정은 [블로그](https://openiot.app/blog)에서 볼 수 있습니다.
 
 ---
 
