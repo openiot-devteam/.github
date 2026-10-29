@@ -23,20 +23,48 @@
 
 ## 이런 문제를 풉니다
 
-IoT는 화면 하나 뒤에 기기, 통신, 서버가 전부 얽혀 있습니다. 저희가 실제로 부딪힌 문제와 고른 답을 블로그에 적고 있습니다.
+IoT는 화면 하나 뒤에 기기, 통신, 서버가 전부 얽혀 있습니다. 저희가 실제로 부딪힌 문제와 고른 답을 [기술 블로그](https://openiot.app/blog)에 적고 있습니다.
 
-| 문제 | 설계기 |
-|---|---|
-| 슬라이더를 3초 움직이면 명령이 90개. 그런데 새벽 2시 예약 실행도 돌아야 한다 | [원격 제어 경로를 둘로 나눈 이야기](https://openiot.app/blog/remote-control-dual-path) |
-| 고객 손에 있는 기기를 원격으로 업데이트하다 실패하면 전량 회수 | [실패해도 기기가 살아있는 업데이트](https://openiot.app/blog/ota-firmware-ab-partition) |
-| 앱에서 "기기 추가"를 누른 몇 초 안에 옆집 사람이 내 기기를 가져갈 수 있다 | [공장에서 나온 기기가 주인을 찾기까지](https://openiot.app/blog/device-provisioning-identity-ownership) |
-| 화면의 초록 점과 실제로 명령을 받을 수 있는 상태는 다르다 | [기기 상태 판정 분투기](https://openiot.app/blog/device-liveness-online-status) |
-| 기기 1,000대가 10초마다 보내면 하루 864만 건 | [저장과 조회 설계기](https://openiot.app/blog/iot-data-pipeline-aggregation) |
-| 한 플랫폼 위 여러 고객사, 데이터가 섞이는 순간 끝 | [격리를 약속이 아니라 구조로 만들기](https://openiot.app/blog/multi-tenancy-isolation-rbac) |
-| 제품이 늘 때마다 앱을 새로 만들고 스토어 심사를 받을 수는 없다 | [하이브리드 앱 셸 설계기](https://openiot.app/blog/hybrid-app-shell-one-app) |
-| 가족 셋이 같은 조명을 켜면 세 휴대폰의 스위치가 같이 움직여야 한다 | [여러 사람이 여러 기기를 함께 쓰는 구조](https://openiot.app/blog/multi-user-device-control-pool) |
+<a href="https://openiot.app/blog"><img src="./assets/blog-carousel.svg" alt="OpenIoT 기술 블로그 글 13편이 차례로 넘어가는 슬라이드" width="100%"></a>
 
-현장 구축기도 있습니다. [자판기를 뜯지 않고 원격 관리하기](https://openiot.app/blog/vending-machine-retrofit-module), [통신이 끊겨도 열리는 무인주차 차단기](https://openiot.app/blog/unmanned-parking-direct-control), [사원증 한 장을 두 시스템이 읽는 휴게 관리](https://openiot.app/blog/break-time-badge-tagging), [부품 고르는 날 시작하는 보안인증](https://openiot.app/blog/kisa-iot-security-certification-lite)
+<details open>
+<summary><b>설계기</b> &nbsp;플랫폼을 만들며 고른 구조</summary>
+<br>
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/remote-control-dual-path"><img src="./assets/blog/remote-control-dual-path.jpg" alt="슬라이더 3초에 명령 90개"></a><br><b><a href="https://openiot.app/blog/remote-control-dual-path">슬라이더 3초에 명령 90개</a></b><br><sub>원격 제어 경로를 둘로 나눈 이야기</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/ota-firmware-ab-partition"><img src="./assets/blog/ota-firmware-ab-partition.jpg" alt="실패해도 기기가 살아있는 업데이트"></a><br><b><a href="https://openiot.app/blog/ota-firmware-ab-partition">실패해도 기기가 살아있는 업데이트</a></b><br><sub>원격 펌웨어 배포 설계기</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/device-provisioning-identity-ownership"><img src="./assets/blog/device-provisioning-identity-ownership.jpg" alt="공장에서 나온 기기가 주인을 찾기까지"></a><br><b><a href="https://openiot.app/blog/device-provisioning-identity-ownership">공장에서 나온 기기가 주인을 찾기까지</a></b><br><sub>기기 등록 구조 설계기</sub></td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/device-liveness-online-status"><img src="./assets/blog/device-liveness-online-status.jpg" alt="&quot;지금 켜져 있나요?&quot;에 정확히 답하기"></a><br><b><a href="https://openiot.app/blog/device-liveness-online-status">"지금 켜져 있나요?"에 정확히 답하기</a></b><br><sub>기기 상태 판정 분투기</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/iot-data-pipeline-aggregation"><img src="./assets/blog/iot-data-pipeline-aggregation.jpg" alt="기기 1,000대가 쏟아내는 데이터 감당하기"></a><br><b><a href="https://openiot.app/blog/iot-data-pipeline-aggregation">기기 1,000대가 쏟아내는 데이터 감당하기</a></b><br><sub>저장과 조회 설계기</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/multi-tenancy-isolation-rbac"><img src="./assets/blog/multi-tenancy-isolation-rbac.jpg" alt="고객사 데이터가 섞이지 않게"></a><br><b><a href="https://openiot.app/blog/multi-tenancy-isolation-rbac">고객사 데이터가 섞이지 않게</a></b><br><sub>격리를 약속이 아니라 구조로 만들기</sub></td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/hybrid-app-shell-one-app"><img src="./assets/blog/hybrid-app-shell-one-app.jpg" alt="제품이 늘어도 앱은 한 벌"></a><br><b><a href="https://openiot.app/blog/hybrid-app-shell-one-app">제품이 늘어도 앱은 한 벌</a></b><br><sub>하이브리드 앱 셸 설계기</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/multi-user-device-control-pool"><img src="./assets/blog/multi-user-device-control-pool.jpg" alt="가족 셋이 같은 조명을 켜는 일"></a><br><b><a href="https://openiot.app/blog/multi-user-device-control-pool">가족 셋이 같은 조명을 켜는 일</a></b><br><sub>여러 사람이 여러 기기를 함께 쓰는 구조</sub></td>
+<td width="33%" valign="top"><a href="https://openiot.app/blog/iot-security-certification-builtin"><img src="./assets/blog/iot-security-certification-builtin.jpg" alt="보안 인증을 제품에 내장하기"></a><br><b><a href="https://openiot.app/blog/iot-security-certification-builtin">보안 인증을 제품에 내장하기</a></b><br><sub>고객사의 인증 부담을 대신 지는 설계</sub></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><b>현장 구축기</b> &nbsp;고객 현장의 제약에서 시작한 프로젝트</summary>
+<br>
+
+<table>
+<tr>
+<td width="25%" valign="top"><a href="https://openiot.app/blog/vending-machine-retrofit-module"><img src="./assets/blog/vending-machine-retrofit-module.jpg" alt="자판기를 뜯지 않는다는 조건에서"></a><br><b><a href="https://openiot.app/blog/vending-machine-retrofit-module">자판기를 뜯지 않는다는 조건에서</a></b><br><sub>통합 제어 모듈 개발기</sub></td>
+<td width="25%" valign="top"><a href="https://openiot.app/blog/unmanned-parking-direct-control"><img src="./assets/blog/unmanned-parking-direct-control.jpg" alt="차단기 앞에서 기다리게 하지 않으려고"></a><br><b><a href="https://openiot.app/blog/unmanned-parking-direct-control">차단기 앞에서 기다리게 하지 않으려고</a></b><br><sub>온라인과 오프라인을 함께 설계한 무인주차 앱</sub></td>
+<td width="25%" valign="top"><a href="https://openiot.app/blog/break-time-badge-tagging"><img src="./assets/blog/break-time-badge-tagging.jpg" alt="사원증 한 장을 두 시스템이 읽습니다"></a><br><b><a href="https://openiot.app/blog/break-time-badge-tagging">사원증 한 장을 두 시스템이 읽습니다</a></b><br><sub>자율 휴게 관리 구축기</sub></td>
+<td width="25%" valign="top"><a href="https://openiot.app/blog/kisa-iot-security-certification-lite"><img src="./assets/blog/kisa-iot-security-certification-lite.jpg" alt="보안인증은 부품을 고르는 날 시작됩니다"></a><br><b><a href="https://openiot.app/blog/kisa-iot-security-certification-lite">보안인증은 부품을 고르는 날 시작됩니다</a></b><br><sub>KISA 라이트 등급 사전 대응기</sub></td>
+</tr>
+</table>
+
+</details>
 
 ## 하는 일
 
